@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* <!-- =============================navbar================================ --> */
+.header{
+    background-color: #f7f8f9;
+    box-shadow: 0 0 2px gray;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    /*display: none;*/
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    margin: auto;
+    z-index: -3;
+}
+.navbar img{
+    width: 70px;
+    background-color: white;
+    color: white;
+}
+/* <!-- ============================= Select Box Start ================================ --> */
+
+.country_select{
+    width: 130px;
+    margin-left: 70px;
+}
+.select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #c7dcff;
+}
+.option p{
+    margin-left: 10px;
+    color: #444444;
+}
+.option_box{
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hidden{
+    display: block;
+}
+/* <!-- =============================select box end================================ --> */
+
+
+/* <!-- =============================Search Bar Start================================ --> */
+
+.search_box{
+    display: flex;
+}
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 10px;
+    color: white;
+}
+/* <!-- =============================Search Bar End================================ --> */
+
+/* <!-- =============================Language Start================================ --> */
+
+.language .afg{
+    width: 30px;
+    position: absolute;
+    top: 17px;
+    left: 45rem;
+    display: none;
+}
+.language .amc{
+    width: 30px;
+    position: absolute;
+    top: 17px;
+    left: 45rem;
+    display: none;
+}
+.language .speak{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: 17px;
+    left: 45rem;
+}
+#eng_tag{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 50px;
+    color: white;
+}
+.hin_eng{
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hin_eng li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+.hin_eng li:hover{
+    background-color: #c7dcff;
+}
+.display_div{
+    display: block;
+}
+/* <!-- =============================Language end================================ --> */
+
+/* <!-- =============================Sign in bar Start================================ --> */
+
+.sign{
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+}
+.sign span{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.signbar{
+    width: 600px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 3.6rem;
+    left: 40rem;
+    display: none;
+}
+.bg-jan{
+    display: block;
+}
+.signbar span{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 12rem;
+    top: 1rem;
+    background-color: darkorange;
+    padding: 10px 90px 10px 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signbar .account{
+    background-color: cornsilk;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 16rem;
+    top: 5rem;
+    border-radius: 5px;
+}
+.account h1{
+    padding-left: 3rem;
+    padding-top: 0.4rem;
+}
+.account .p1{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.account .p2{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.account .p3{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.account .p4{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.signbar .list{
+    background-color: cornsilk;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+    border-radius: 5px;
+}
+.list h1{
+    padding-left: 1.2rem;
+    padding-top: 0.4rem;
+}
+.list .l1{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.list .l2{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+/* <!-- =============================Sign in bar end================================ --> */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.signbox{
+    width: 450px;
+    height: 400px;
+    background-color: #444444;
+    position: absolute;
+    left: 42rem;
+    top: 3.6rem;
+    display: none;
+}
+.signbox #close{
+    color: cornsilk;
+    padding-left: 27rem;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+.signbox h2{
+    padding-left: 5rem;
+    padding-top: 0.4rem;
+    color: white;
+}
+.signbox #email{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 20px 1px rgba(255,255,255,0.4);
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+}
+.signbox #password{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 20px 1px rgba(255,255,255,0.4);
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+}
+.signbox .btn{
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    /*border: none;*/
+    outline: none;
+    background-color: chartreuse;
+    box-shadow: 1px 1px 10px 1px rgba(156,345,678,0.6);
+    position: absolute;
+    top: 13rem;
+    left: 11rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: orchid;
+}
+.basket{
+    margin-left: 21rem;
+    background-color: white;
+}
+.basket img{
+    width: 2.5rem;
+    background-color: white;
+}
+.navbar2{
+    background-color: #f7f8f9;
+    box-shadow: 0 0 2px gray;
+    position: absolute;
+    top: 9%;
+    background-color: dimgrey;
+    width: 85.4rem;
+    /*display: none;*/
+    padding: 1rem;
+    z-index: -2;
+}
+.menu{
+    background-color: black;
+    color: white;
+    /*padding: 10px;*/
+    position: absolute;
+    top: 0.4rem;
+    cursor: pointer;
+}
+.menu .menubar{
+    color: white;
+    position: absolute;
+    top: 0.0rem;
+    align-items: center;
+}
+.menu .all{
+    margin-left: 0.3rem;
+}
+.lists{
+    color: white;
+    cursor: pointer;
+}
+.lists .deal_list{
+    display: flex;
+    justify-content: space-around;
+    /*grid-gap: 6px;*/
+    align-items: center;
+}
+.deal_list li{
+    list-style: none;
+}
+.deal_list .first{
+    position: absolute;
+    left: 4rem;
+    color: chocolate;
+}
+.deal_list .second{
+    position: absolute;
+    left: 13rem;
+    color: chocolate;
+}
+.deal_list .third{
+    position: absolute;
+    left: 25rem;
+    color: chocolate;
+}
+.deal_list .four{
+    position: absolute;
+    left: 32rem;
+    color: chocolate;
+}
+.deal_list .five{
+    position: absolute;
+    left: 40rem;
+    color: chocolate;
+}
+.deal_list .six{
+    position: absolute;
+    left: 76rem;
+    color: chocolate;
+}
+/* <!-- ============================= Menu Bar ================================ --> */
+.clickbar{
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    display: none;
+    /*z-index: -3;*/
+}
+.clickbar .menuband{
+    font-size: 1.3rem;
+    /*display: none;*/
+    cursor: pointer;
+    color: white;
+    margin-left: 20rem;
+}
+.menuband:hover{
+    color: deepskyblue;
+    box-shadow: 10px 10px 10px 10px rgba(256,256,267,0.6);
+}
+.active-karo{
+    display: block;
+}
+.clickbar h1{
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+    color: white;
+}
+h1:hover{
+    color: gold;
+}
+.shop{
+    font-size: 1.8rem;
+}
+.clickbar .am{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+}
+.clickbar .books{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+}
+.clickbar .aA{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: white;
+}
+.am svg{
+    width: 0.8rem;
+    color: white;
+    background-color: white;
+    position: absolute;
+    left: 20rem;
+}
+.books svg{
+    width: 0.8rem;
+    color: white;
+    background-color: white;
+    position: absolute;
+    left: 20rem;
+}
+.aA svg{
+    width: 0.8rem;
+    color: white;
+    background-color: white;
+    position: absolute;
+    left: 20rem;
+}
+hr{
+    margin-top: 1rem;
+}
+.settings{
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 8rem;
+    margin-top: 0.6rem;
+}
+.settings:hover{
+    color: gold;
+}
+/* <!-- ============================= Music Bar ================================ --> */
+.musicBar{
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    /*display: none;*/
+    color: white;
+    display: none;
+}
+.shoro{
+    display: block;
+}
+.musicband svg{
+    width: 1rem;
+    color: white;
+    background-color: white;
+    margin-left: 20rem;
+    margin-top: 0.3rem;
+}
+.musicBar h2{
+    font-size: 2.6rem;
+    margin-left: 2rem;
+    position: absolute;
+    top: 7rem;
+}
+h2:hover{
+    color: coral;
+}
+.musicBar .pod{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+}
+.pod:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.musicBar .open{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+}
+.open:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.musicBar .down{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+}
+.down:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+/* <!-- ============================= Books Bar ================================ --> */
+
+.booksBar{
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    /*display: none;*/
+    color: white;
+    display: none;
+}
+.go{
+    display: block;
+}
+.booksband svg{
+    width: 1rem;
+    color: white;
+    background-color: white;
+    margin-left: 20rem;
+    margin-top: 0.3rem;
+}
+.booksBar h2{
+    font-size: 2.6rem;
+    margin-left: 6rem;
+    position: absolute;
+    top: 7rem;
+}
+h2:hover{
+    color: coral;
+}
+.booksBar .kid{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+}
+.kid:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.booksBar .kind{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+}
+.kind:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.booksBar .kindle{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+}
+.kindle:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+/* <!-- ============================= Elecs Bar ================================ --> */
+
+.elecBar{
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+.gojan{
+    display: block;
+}
+.elecband svg{
+    width: 1rem;
+    color: white;
+    background-color: white;
+    margin-left: 20rem;
+    margin-top: 0.3rem;
+}
+.elecBar h2{
+    font-size: 2.6rem;
+    margin-left: 2.8rem;
+    position: absolute;
+    top: 7rem;
+}
+h2:hover{
+    color: coral;
+}
+.elecBar .cam{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+}
+.cam:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.elecBar .head{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+}
+.head:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.elecBar .vid{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+}
+.vid:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+/* <!-- ============================= Computers Bar ================================ --> */
+.computerBar{
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+.gojan{
+    display: block;
+}
+.computerband svg{
+    width: 1rem;
+    color: white;
+    background-color: white;
+    margin-left: 20rem;
+    margin-top: 0.3rem;
+}
+.computerBar h2{
+    font-size: 2.6rem;
+    margin-left: 2.8rem;
+    position: absolute;
+    top: 7rem;
+}
+h2:hover{
+    color: coral;
+}
+.computerBar .data{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+}
+.data:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.computerBar .monitor{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+}
+.monitor:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+.computerBar .print{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+}
+.print:hover{
+    width: 20rem;
+    height: 2rem;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 5px 2px 8px 2px rgba(253,445,677,0.4);
+    transition: 0.3s ease;
+}
+/* <!-- ============================= Main Items ================================ --> */
+.main-item{
+    border-radius: 2rem;
+    width: 20rem;
+    height: 60vh;
+    background-color: cyan;
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    z-index: -3;
+    overflow-y: hidden;
+}
+.main-img img{
+    width: 70%;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.main-name h3{
+margin-left: 6.4rem;
+}
+.main-name .price {
+    margin-left: 7.6rem;
+}
+#crime{
+    margin-left: 29rem;
+}
+#beauty{
+    margin-left: 58rem;
+}
+#speed4{
+ margin-top: 30rem;
+}
+#crime3{
+    margin-top: 30rem;
+    margin-left: 29rem;
+}
+#beauty3{
+    margin-top: 30rem;
+    margin-left: 58rem;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* <!-- =============================navbar================================ --> */
+.header{
+    background-color: #f7f8f9;
+    box-shadow: 0 0 2px gray;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    padding: 0.6rem;
+    /*display: none;*/
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    margin: auto;
+    z-index: -3;
+}
+.menubar{
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+.youtube{
+    width: 24px;
+    background-color: crimson;
+    color: white;
+    margin-left: 2rem;
+}
+.youtubejan{
+    color: crimson;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.search_box{
+    display: flex;
+}
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 20rem;
+    color: white;
+    background-color: black;
+}
+.searchclass::placeholder{
+    color: white;
+}
+/* <!-- =============================Search Bar End================================ --> */
+
+/* <!-- =============================Language Start================================ --> */
+.language{
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+}
+.language svg{
+    position: absolute;
+    left: 68rem;
+    top: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    background-color: white;
+}
+/* <!-- =============================Language end================================ --> */
+
+/* <!-- =============================Sign in bar Start================================ --> */
+
+.sign{
+    margin-left: 260px;
+    cursor: pointer;
+    color: white;
+}
+.sign svg{
+    cursor: pointer;
+    width: 2rem;
+    background-color: white;
+}
+
+.basket{
+    margin-left: 21rem;
+    background-color: white;
+}
+.basket img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+    background-color: white;
+    border: 3px solid crimson;
+}
